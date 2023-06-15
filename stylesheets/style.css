@@ -1,0 +1,30 @@
+@import "container.css";
+@import "centering.css";
+
+html, body {
+	height: 100%;
+	width: 100%;
+	background: url(/images/pluto.webp) center center no-repeat;
+	background-color: rgb(41, 43, 42);
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	border: 0;
+	margin: 6px;
+	padding: 4px 12px 4px 12px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	background-color: transparent;
+	cursor: pointer;
+	color: white;
+}
+
+button:hover {
+	background-color: rgb(46, 48, 47);
+}
+
+button:active {
+	color: rgb(20, 21, 192)
+}

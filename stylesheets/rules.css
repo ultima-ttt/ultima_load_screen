@@ -1,0 +1,33 @@
+@import "iframe.css";
+@import "centering.css";
+@import "fonts.css";
+@import "container.css";
+
+.ruleheader {
+	color: #e06666;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.underline {
+	border-bottom: 1px solid currentColor;
+}
+
+.ruleinfo {
+	color: #666;
+	margin-left: 50px;
+	font-family: 'Robot', sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.rule-container {
+	background-color: rgba(7, 7, 6, 0.9);
+	border-radius: 8px;
+	overflow-y: scroll;
+	width: 45%;
+	margin: 5px auto;
+}
