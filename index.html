@@ -1,6 +1,6 @@
 <html>
         <head>
-			<meta charset="UTF-8">			
+			<meta charset="UTF-8">
 			<link rel="stylesheet" href="stylesheets/style.css">
 		</head>
 
@@ -12,27 +12,27 @@
 			<script>
 				var pageiframe = document.getElementById("page");
 				var header = document.getElementById("header");
-				function init(pages) {
-					"use strict";
-					for (let i = 0; i < pages.length; i++) {
-						let page = pages[i];
-						var button = document.createElement("button");
-						header.appendChild(button);
-						button.onclick = function() {
-							pageiframe.src = page.href;
-						}
-						button.innerText = page.title;
-					}
+				// function init(pages) {
+				// 	"use strict";
+				// 	for (let i = 0; i < pages.length; i++) {
+				// 		let page = pages[i];
+				// 		var button = document.createElement("button");
+				// 		header.appendChild(button);
+				// 		button.onclick = function() {
+				// 			pageiframe.src = page.href;
+				// 		}
+				// 		button.innerText = page.title;
+				// 	}
 
-					pageiframe.src = pages[0].href;
-				}
+				// 	pageiframe.src = pages[0].href;
+				// }
 
-				var req = new XMLHttpRequest();
-				req.addEventListener("load", function() {
-					init(JSON.parse(this.responseText));
-				});
-				req.open("GET", "./pages.json");
-				req.send();
+				// var req = new XMLHttpRequest();
+				// req.addEventListener("load", function() {
+				// 	init(JSON.parse(this.responseText));
+				// });
+				// req.open("GET", "./pages.json");
+				// req.send();
 			</script>
         </body>
 </html>
